@@ -73,7 +73,7 @@ class TiffGenerator:
 
             image_table.paste(Image.fromarray(image_data), (x_offset, y_offset))
 
-            if row_item_counter < rows:
+            if row_item_counter < rows - 1:
                 x_offset += x + self.padding[0]
                 row_item_counter += 1
 
